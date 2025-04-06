@@ -20,14 +20,14 @@ public class UsersController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<AppUserModel>>> List()
+    public async Task<ActionResult<IEnumerable<AppUsersModel>>> List()
     {
         var users = await _usersService.GetAllUsers();
         return Ok(users);
     }
 
     [HttpGet("{id:int}")]
-    public async Task<ActionResult<AppUserModel>> GetUser(int id)
+    public async Task<ActionResult<AppUsersModel>> GetUser(int id)
     {
         var user= await _usersService.GetUser(id);
         if(user == null) return NotFound();

@@ -8,7 +8,7 @@ using API.Entities.BaseEntities;
 
 namespace API.Entities.User;
 
-public class AppUserModel : DateTimeEntity
+public class AppUsersModel : DateTimeEntity
 {
     public int Id { get; set; }
     public required string UserName { get; set; }

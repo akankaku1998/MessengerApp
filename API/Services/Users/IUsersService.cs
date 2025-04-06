@@ -9,6 +9,6 @@ namespace API.Services.Users;
 
 public interface IUsersService
 {
-    Task<IEnumerable<AppUserModel>> GetAllUsers();
-    Task<AppUserModel> GetUser(int id);
+    Task<IEnumerable<AppUsersModel>> GetAllUsers();
+    Task<AppUsersModel> GetUser(int id);
 }

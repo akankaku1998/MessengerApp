@@ -8,6 +8,6 @@ namespace API.Repositories.Users;
 
 public interface IUsersRepository
 {
-    Task<IEnumerable<AppUserModel>> GetAll();
-    Task<AppUserModel> GetById(int id);
+    Task<IEnumerable<AppUsersModel>> GetAll();
+    Task<AppUsersModel> GetById(int id);
 }

@@ -17,7 +17,7 @@ public class UsersService : IUsersService
         _usersRepository = usersRepository;
     }
 
-    public Task<IEnumerable<AppUserModel>> GetAllUsers() => _usersRepository.GetAll();
+    public Task<IEnumerable<AppUsersModel>> GetAllUsers() => _usersRepository.GetAll();
 
-    public Task<AppUserModel> GetUser(int id) => _usersRepository.GetById(id);
+    public Task<AppUsersModel> GetUser(int id) => _usersRepository.GetById(id);
 }
