@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using API.Entities.BaseEntities;
 
 namespace API.Entities.User;
-[Table("AppUser")]
+
 public class AppUserModel : DateTimeEntity
 {
     public int Id { get; set; }
