@@ -1,4 +1,5 @@
 using API.Data;
+using API.Extentions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,6 +9,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+builder.Services.AddRepositories();
+builder.Services.AddServices();
 
 var app = builder.Build();
 
