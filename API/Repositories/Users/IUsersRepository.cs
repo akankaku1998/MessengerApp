@@ -10,4 +10,5 @@ public interface IUsersRepository
 {
     Task<IEnumerable<AppUsersModel>> GetAll();
     Task<AppUsersModel> GetById(int id);
+    
 }
